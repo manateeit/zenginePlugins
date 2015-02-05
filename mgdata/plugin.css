@@ -1,0 +1,18 @@
+/**
+ * Plugin mgdata CSS
+ */
+
+.title { 
+    color: purple;
+}
+.ptyTable {
+    width: 30%;
+    border: solid 1px;
+}
+.ptyTable td, th {
+    padding-top:10px;
+    text-align: center;
+    }
+.mgtype {
+     text-align: left !important;
+}

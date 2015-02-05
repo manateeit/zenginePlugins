@@ -1,0 +1,27 @@
+<script type="text/ng-template" id="drop-table-main">
+	<div class="title">
+		<h1>Delete All Records in a Form</h1>
+	</div>
+	
+	
+<p> <select ng-options="form.name for form in forms"  ng-change="getRecordCount(formSelected.id)" class="form-control" ng-model="formSelected" > </select></p>
+<p>Please Type YES to confirm:  <input type="text" ng-change="confirmationTest()" name="input" ng-model="confirmation"  ></p>
+
+
+<div ng-show="showHowMany"> 
+Total Records In Table: {{formSelected.name}} = {{totalRecords}}
+</div>
+
+
+<div ng-show="confirmationTest()"><button  class="btn btn-lg  btn-danger" ng-click="deleteRecords()"> delete </button> </div>
+
+<div ng-show="showCount">
+
+<h4>Deleting Records</h4>
+<h4>{{deleteRecordCount}} Records Deleted</h4>       
+
+<h4 ng-show="deleteRecordCount == totalRecords">Deletion Completed!</h4>
+</div>	
+	
+</script>
+

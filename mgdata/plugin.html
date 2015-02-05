@@ -1,0 +1,46 @@
+<script type="text/ng-template" id="mgdata-main">
+	<div class="title">
+		<h1>DataMigration</h1>
+	</div>
+	
+	<table class="ptyTable table table-bordered table-striped table-hover" >
+	<tr style="margin-top:10px;">
+	<th>Migration Type</th>
+	<th>Record Count</th>
+	</tr>
+	<tr>
+        <td class="mgtype">
+        <input class="btn btn-primary" type="button" ng-click="migrate('customers')" value="Customers"> </td>
+        <td>
+        {{customers.length}}</td>
+    </tr>
+  <tr>
+        <td class="mgtype">
+	    <input class="btn btn-primary" type="button" ng-click="migrate('suppliers')" value="Suppliers"></td>
+	    <td>
+	    {{suppliers.length}}</td>
+    </tr>
+	<tr>
+        <td class="mgtype">
+	    <input class="btn btn-primary"  type="button" ng-click="migrate('contacts')" value="contacts"></td>
+	    <td>
+	    {{contacts.length}}</td>
+    </tr>
+	 <tr>
+        <td class="mgtype">
+	    <input class="btn btn-primary"  type="button" ng-click="migrate('materials')" value="materials"></td>
+	    <td>
+	    {{materials.length}}</td>
+	    
+      </tr>
+      <tr>
+        <td class="mgtype">
+	    <input class="btn btn-primary"  type="button" ng-click="incrementCounter()" value="Counter"></td>
+	    <td>
+	   {{counterValue}}</td>
+	    
+      </tr>
+</table>
+    
+</script>
+
